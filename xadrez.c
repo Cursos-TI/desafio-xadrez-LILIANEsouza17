@@ -26,6 +26,7 @@ int main() {
 
     int casa_rainha=0;
     int movimento_rainha=0;
+    printf("\n");
 
     do {
         printf("RAINHA NA CASA: %d\n", casa_rainha);
