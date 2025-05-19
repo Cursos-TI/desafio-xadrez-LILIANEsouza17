@@ -5,6 +5,25 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
+    // nome do desafio
+    printf("DESAFIO MOVIMENTAÇÃO DE PEÇAS DE XADREZ!\n");
+    //primeira peça
+    printf("MOVIMENTO TORRE\n");
+
+    int casa=0; //casa inicial da torre
+    int movimentos_peca=0;
+
+    while (movimentos_peca<5) {
+        casa++;// move uma casa para a direita
+        movimentos_peca++;
+        printf("TORRE NA CASA: %d\n", casa);
+    }
+    
+    
+   return 0;        
+}    
+
+
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
@@ -28,5 +47,5 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
-    return 0;
-}
+
+
