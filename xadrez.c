@@ -17,7 +17,7 @@ int main() {
     while (movimentos_peca<5) {
         casa++;// move uma casa para a direita
         movimentos_peca++;
-        printf("TORRE NA CASA: %d\n", casa);
+        printf("MOVIMENTO TORRE( 5 CASAS PARA A DIREITA): %d\n", casa);
     }
     
     printf("\n");
@@ -30,11 +30,26 @@ int main() {
     
 
     do {
-        printf("RAINHA NA CASA: %d\n", casa_rainha);
+        printf("MOVIMENTO RAINHA ( 8 CASAS PARA A ESQUERDA): %d\n", casa_rainha);
         casa_rainha++;//MOVE UMA CASA PARA A ESQUERDA
         movimento_rainha++;
 
     } while(movimento_rainha<8);
+    printf("\n");
+
+    //terceira peça BISPO
+    printf("MOVIMENTO BISPO\n");
+
+    int casa_bispo=1;//casa inicial na horizontal
+    int movimento_bispo=1;//casa inicial na vertical
+
+    printf("MOVIMENTO BISPO( 5 CASAS NA DIAGONAL PARA CIMA Á DIREITA): \n");
+
+    for(int i = 0; i < 5; i++) {
+        casa_bispo++;
+        movimento_bispo++;
+        printf("CASA %d: ( %d, %d)\n", i + 1, casa_bispo, movimento_bispo);
+    }
 
     
     
