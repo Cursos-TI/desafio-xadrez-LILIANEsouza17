@@ -18,6 +18,9 @@ int main() {
         movimentos_peca++;
         printf("TORRE NA CASA: %d\n", casa);
     }
+    
+
+
     // segunda peça RAINHA
     printf("MOVIMENTO RAINHA\n");
 
@@ -25,16 +28,16 @@ int main() {
     int movimento_rainha=0;
 
     do {
-        printf(" %d\n", casa_rainha);
-        casa_rainha++;
+        printf("RAINHA NA CASA: %d\n", casa_rainha);
+        casa_rainha++;//MOVE UMA CASA PARA A ESQUERDA
         movimento_rainha++;
 
-    } while(movimento_rainha<8)
+    } while(movimento_rainha<8);
 
     
     
-   return 0;        
-}    
+   return 0;
+}   
 
 
     // Nível Novato - Movimentação das Peças
