@@ -7,7 +7,7 @@
 int main() {
     // nome do desafio
     printf("DESAFIO MOVIMENTAÇÃO DE PEÇAS DE XADREZ!\n");
-    //primeira peça
+    //primeira peça TORRE
     printf("MOVIMENTO TORRE\n");
 
     int casa=0; //casa inicial da torre
@@ -18,6 +18,19 @@ int main() {
         movimentos_peca++;
         printf("TORRE NA CASA: %d\n", casa);
     }
+    // segunda peça RAINHA
+    printf("MOVIMENTO RAINHA\n");
+
+    int casa_rainha=0;
+    int movimento_rainha=0;
+
+    do {
+        printf(" %d\n", casa_rainha);
+        casa_rainha++;
+        movimento_rainha++;
+
+    } while(movimento_rainha<8)
+
     
     
    return 0;        
