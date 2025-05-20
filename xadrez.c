@@ -38,14 +38,13 @@ int main() {
                printf("\n");
 
     //terceira peça BISPO
-    printf("MOVIMENTO BISPO\n");
-
-    int casa_bispo=1;//casa inicial na horizontal
-    int movimento_bispo=1;//casa inicial na vertical
-
     printf("MOVIMENTO BISPO( 5 CASAS NA DIAGONAL PARA CIMA Á DIREITA): \n");
 
-    for(int i = 0; i < 5; i++) {
+    int casa_bispo = 1;//casa inicial na horizontal
+    int movimento_bispo = 1;//casa inicial na vertical
+
+    
+     for(int i = 0; i < 5; i++) {
         casa_bispo++;
         movimento_bispo++;
         printf("CASA %d: ( %d, %d)\n", i + 1, casa_bispo, movimento_bispo);
