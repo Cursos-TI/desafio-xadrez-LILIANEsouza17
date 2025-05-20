@@ -9,33 +9,33 @@ int main() {
     printf("DESAFIO MOVIMENTAÇÃO DE PEÇAS DE XADREZ!\n");
     printf("\n");
     //primeira peça TORRE
-    printf("MOVIMENTO TORRE\n");
+    printf("MOVIMENTO TORRE( 5 CASAS PARA A DIREITA):\n");
 
-    int casa=0; //casa inicial da torre
-    int movimentos_peca=0;
+    int casa_torre = 0; //casa inicial da torre
+    int movimento_torre = 0;
 
-    while (movimentos_peca<5) {
-        casa++;// move uma casa para a direita
-        movimentos_peca++;
-        printf("MOVIMENTO TORRE( 5 CASAS PARA A DIREITA): %d\n", casa);
+    while (movimento_torre < 5) {
+        casa_torre++;// move uma casa para a direita
+        movimento_torre++;
+        printf("CASA %d: ( %d, y)\n", movimento_torre, casa_torre);
     }
     
     printf("\n");
 
     // segunda peça RAINHA
-    printf("MOVIMENTO RAINHA\n");
+    printf("MOVIMENTO RAINHA( 8 CASAS PARA A ESQUERDA): \n");
 
-    int casa_rainha=0;//casa inicial da rainha
-    int movimento_rainha=0;
+    int casa_rainha = 8;//casa inicial da rainha
+    int movimento_rainha = 0;
     
 
     do {
-        printf("MOVIMENTO RAINHA ( 8 CASAS PARA A ESQUERDA): %d\n", casa_rainha);
-        casa_rainha++;//MOVE UMA CASA PARA A ESQUERDA
+        casa_rainha--; // MOVE UMA CASA PARA A ESQUERDA
         movimento_rainha++;
-
-    } while(movimento_rainha<8);
-    printf("\n");
+        printf("CASA  %d: ( %d, y)\n", movimento_rainha, casa_rainha);
+        
+         } while(movimento_rainha < 8);
+               printf("\n");
 
     //terceira peça BISPO
     printf("MOVIMENTO BISPO\n");
